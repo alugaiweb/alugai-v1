@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alugaí</title>
+    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="shortcut icon" href="Assets/alugaiIcone1.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8956f5860c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-top">
+            <div class="box-logo">
+                <img src="Assets/alugaiIcone1.svg" alt="logo_alugai">
+                <h1><a href="index.html">Alugaí</a></h1>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="">Alugar</a></li>
+                <li><a href="#opcoes-univs">Descobrir</a></li>
+                <li><a href="#fale_conosco">Fale Conosco</a></li>
+                <li><a href="">ajuda</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+        <div class="btns-bar">
+            <button class="login"><a href="login.html">Login</a></button>
+            <button class="cdst"><a href="cadastro.html">Cadastre-se</a></button>
+        </div>
+        <div onclick="menuMobileShow()" class="mobile-menu-icon">
+            <img class="icon-menu" src="Assets/bars-solid.svg" alt="mobile-icon">
+        </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="">Alugar</a></li>
+                <li><a href="#opcoes-univs">Descobrir</a></li>
+                <li><a href="#fale_conosco">Fale Conosco</a></li>
+                <li><a href="">ajuda</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+            <div class="btns-mobile">
+                <button class="login"><a href="login.html">Login</a></button>
+                <button class="cdst"><a href="cadastro.html">Cadastre-se</a></button>
+            </div>
+        </div>
+    </header>
+    <div class="slogan">
+        <h1>Encontre os melhores locais para aluguel próximo a universidade que você estuda</h1>
+    </div>
+    <div class="navegation">
+        <div class="box-input">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" placeholder="Digite o nome da universidade que você estuda..." >
+        </div>
+        <div onclick="menuShow()" class="filtros">
+            <div class="text">
+                <span class="text-filtro"><i class="fa-solid fa-bars-staggered fa-rotate-180"></i></span>
+                <h1 class="text-filtro">Filtros</h1>
+                <img class="icon-arrow" src="Assets/chevron-down-solid.svg" alt="icon-arrow">
+            </div>
+            <ul class="sub-menu">
+                <li class="filt">Filtrar por</li>
+                <li><i class="fa-solid fa-square-check"></i>Mais perto</li>
+                <li><i class="fa-regular fa-square-check"></i>Mais Barato</li>
+                <li><i class="fa-regular fa-square-check"></i>Mais Retável</li>
+                <li><i class="fa-regular fa-square-check"></i>Maior</li>
+                <li><i class="fa-regular fa-square-check"></i>Menor</li>
+                <li><i class="fa-regular fa-square-check"></i>Mais Acessível</li>
+            </ul>
+        </div>
+        <div class="btn-pqs">
+            <button class="pesquisa">Pesquisar</button>
+        </div>
+    </div>
+    <div class="univs-proximas">
+        <div class="box-univs-proximas">
+            <h1>Universidades próximas à você <i class="fa-solid fa-location-dot"></i></h1>
+        </div>
+    </div>
+    <div class="universidades" id="opcoes-univs">
+        <div class="option-house-card">
+            <div class="univ-example">
+                <a href="mapa-imoveis.html" class="buuton">
+                    <button>Ver no mapa <i class="fa-solid fa-map-location-dot"></i></button>
+                </a>
+                <div class="univ-info">
+                    <p class="text-negrito">Instituto Federal de Ciência, Tecnologia</p>
+                    <p class="text-negrito">e Educação do Ceará <span>- Iguatu</span></p>
+                    <p class="text-normal">Unidade Cajazeiras</p>
+                </div>
+            </div>
+            <div class="container-slider">
+                <button id="prev-button"><img src="Assets/arrow.png" alt="prev-button"></button>
+                <div class="container-images">
+                  <img src="Assets/house-example-1.png" alt="house" class="slider on">
+                  <img src="Assets/house-example-2.png" alt="house" class="slider">
+                  <img src="Assets/house-example-1.png" alt="house" class="slider">
+                  <img src="Assets/house-example-2.png" alt="house" class="slider">
+                  <img src="Assets/house-example-1.png" alt="house" class="slider">
+                </div>
+                <button id="next-button"><img src="Assets/arrow.png" alt="next-button"></button>
+            </div>
+            <div class="house-info">
+                <h3>Valor: R$ 000.00 / Mês</h3>
+                <h2><i class="fa-solid fa-location-dot"></i> Rua XXXXX XX XXXXX, N°00-Bairro</h2>
+                <button>Ver mais informações</button>
+            </div>
+        </div>
+        <div class="option-house-card-2">
+            <div class="univ-example-2">
+                <button class="btn-2">Ver no mapa <i class="fa-solid fa-map-location-dot"></i></button>
+                <div class="univ-info-2">
+                    <p class="text-negrito">Instituto Federal de Ciência, Tecnologia</p>
+                    <p class="text-negrito">e Educação do Ceará <span>- Iguatu</span></p>
+                    <p class="text-normal">Unidade Areias</p>
+                </div>
+            </div>
+            <div class="container-slider-2">
+                <button id="prev-button2"><img src="Assets/arrow.png" alt="prev-button2"></button>
+                <div class="container-images-2">
+                  <img src="Assets/house-example-1.png" alt="house" class="slider2 on">
+                  <img src="Assets/house-example-2.png" alt="house" class="slider2">
+                  <img src="Assets/house-example-1.png" alt="house" class="slider2">
+                  <img src="Assets/house-example-2.png" alt="house" class="slider2">
+                  <img src="Assets/house-example-1.png" alt="house" class="slider2">
+                </div>
+                <button id="next-button2"><img src="Assets/arrow.png" alt="next-button2"></button>
+            </div>
+            <div class="house-info-2">
+                <h3>Valor: R$ 000.00 / Mês</h3>
+                <h2><i class="fa-solid fa-location-dot"></i> Rua XXXXX XX XXXXX, N°00-Bairro</h2>
+                <button>Ver mais informações</button>
+            </div>
+        </div>
+    </div>
+    <div class="aba-divulgacao">
+        <div class="muie">
+            <img src="Assets/muié-2.png" alt="">
+        </div>
+        <div class="anuncie">
+            <h1>Adicione <span>seu</span> Imóvel <span>para</span> ALUGUEL</h1>
+            <button>CADASTRAR</button>
+        </div>
+    </div>
+    <div id="fale_conosco" class="contatos">
+        <div class="fale-conosco">
+            <h1>FALE CONOSCO</h1>
+        </div>
+        <div class="itens-contatos">
+            <div class="whats">
+                <h1><i class="fa-brands fa-whatsapp"></i> (88) 9 9000-0000</h1>
+            </div>
+            <div class="email">
+                <h1><i class="fa-solid fa-envelope"></i> alugai@email.com.br</h1>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="sobre" class="sobre">
+            <h1>Sobre</h1><br>
+            <p><span>Bem-vindo ao Alugaí: Sua Jornada Acadêmica Começa Aqui!</span><br>
+                No Alugaí, entendemos que a vida universitária é uma aventura única repleta de descobertas e aprendizados. Queremos ser parte da sua jornada oferecendo uma plataforma descomplicada e dedicada ao aluguel de imóveis, feita especialmente para a comunidade acadêmica. <br><br>
+               <span>Por que escolher o Alugaí?</span><br>
+               Variedade Sob Medida: Explore uma ampla gama de opções de imóveis cuidadosamente selecionadas para atender às suas necessidades de estudante. Seja um estúdio aconchegante só para você ou uma casa compartilhada para uma experiência mais social, no Alugaí, há algo para todos. <br><br>
+               <span>Proximidade aos Campus: </span> Nosso foco está em oferecer opções próximas aos campus universitários, proporcionando não apenas um lugar para morar, mas uma extensão natural do ambiente acadêmico. Aproxime-se de suas aulas e das atividades universitárias sem complicações. <br><br>
+               <span>Segurança e Tranquilidade: </span>Priorizamos a segurança dos nossos inquilinos. Todos os imóveis listados no Alugaí passam por rigorosas verificações, garantindo que você possa se concentrar em seus estudos com total tranquilidade. <br><br>
+               <span>Experiência de Comunidade: </span>Acreditamos na força da comunidade. Ao escolher o Alugaí, você se torna parte de uma rede de estudantes que valorizam não apenas onde vivem, mas também as conexões que fazem. Construa amizades duradouras enquanto constrói seu futuro acadêmico. <br><br>
+               <span>Flexibilidade que Você Precisa: </span>Entendemos que a vida universitária é dinâmica. Oferecemos opções de aluguel flexíveis para se adaptar ao seu estilo de vida acadêmico, proporcionando a liberdade que você precisa para aproveitar ao máximo cada momento.
+            </p>
+        </div>
+        <div class="redes">
+            <h1>Nos sigam nas <span>redes sociais</span></h1>
+            <div class="sociais">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Assets/script.js"></script>
+    
+</body>
+</html>
